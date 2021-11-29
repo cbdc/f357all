@@ -1,0 +1,450 @@
+SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                17814 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 3.4 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2021-04-13T14:53:40
+ !-->
+<RESOURCE>
+<!-- Describes BINTABLE extensions in the following HDU.-->
+<TABLE name="Joined" nrows="893">
+<PARAM arraysize="1045" datatype="char" name="COMMENT" value="--BEGIN-ASTROPY-SERIALIZED-COLUMNS--
+datatype:
+- {name: Field_ID, datatype: int64, format: 4d, description: Field num\
+ber assigned during processing}
+- {name: Name, datatype: string, format: 18s, description: Unassociate\
+d Fermi source}
+- {name: Num_VLASS, datatype: int64, format: 3d, description: Number o\
+f identified VLASS sources}
+- {name: NumSig_VLASS, datatype: int64, format: 3d, description: Numbe\
+r of significant (3sig) VLASS sources}
+- {name: Num_D5GHZ, datatype: int64, format: 3d, description: Number o\
+f identified D5GHZ sources}
+- {name: NumSig_D5GHZ, datatype: int64, format: 3d, description: Numbe\
+r of significant (3sig) D5GHZ sources}
+- {name: Num_D7GHZ, datatype: int64, format: 3d, description: Number o\
+f identified D7GHZ sources}
+- {name: NumSig_D7GHZ, datatype: int64, format: 3d, description: Numbe\
+r of significant (3sig) D7GHZ sources}
+- {name: Coverage, datatype: float64, format: 5.4f, description: Relat\
+ive coverage of position ellipse}
+meta:
+__serialized_columns__: {}
+--END-ASTROPY-SERIALIZED-COLUMNS--">
+<DESCRIPTION>FITS COMMENT card values</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="33" datatype="char" name="Match type" value="Pair match; Best match, symmetric">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="11" datatype="char" name="Match algorithm" value="Exact Value">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="109" datatype="char" name="Join Type" value="1 not 2 (An output row only for rows which appear in the first table but are not matched in the second table)">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="First input table" value="2: F357_META_table3.fits"/>
+<PARAM arraysize="15" datatype="char" name="Second input table" value="35: match(33,2)"/>
+<PARAM arraysize="126" datatype="char" name="COMMENT" value="
+*** End of mandatory fields ***
+
+
+*** Column names ***
+
+
+*** Column formats ***
+
+
+*** Column dimensions (2 D or greater) ***
+">
+<DESCRIPTION>FITS COMMENT card values</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN3" value="0.0">
+<DESCRIPTION>Minimum value for RAJ2000</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX3" value="360.0">
+<DESCRIPTION>Maximum value for RAJ2000</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN4" value="-90.0">
+<DESCRIPTION>Minimum value for DEJ2000</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX4" value="90.0">
+<DESCRIPTION>Maximum value for DEJ2000</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN5" value="0.0">
+<DESCRIPTION>Minimum value for GLON</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX5" value="360.0">
+<DESCRIPTION>Maximum value for GLON</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN6" value="-90.0">
+<DESCRIPTION>Minimum value for GLAT</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX6" value="90.0">
+<DESCRIPTION>Maximum value for GLAT</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN7" value="0.0"/>
+<PARAM datatype="double" name="TLMIN8" value="0.0"/>
+<PARAM datatype="double" name="TLMIN10" value="0.0">
+<DESCRIPTION>Minimum value for Conf_95_SemiMajor</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN11" value="0.0">
+<DESCRIPTION>Minimum value for Conf_95_SemiMinor</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN15" value="0.0">
+<DESCRIPTION>Minimum value for Signif_Avg</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN16" value="0.0">
+<DESCRIPTION>Minimum value for Pivot_Energy</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN17" value="0.0">
+<DESCRIPTION>Minimum value for Flux1000</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMIN17" value="1000.0">
+<DESCRIPTION>[MeV] Minimum refenergy for Flux1000</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMAX17" value="100000.0">
+<DESCRIPTION>[MeV] Maximum refenergy for Flux1000</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMIN18" value="1000.0">
+<DESCRIPTION>[MeV] Minimum refenergy for Unc_Flux1000</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMAX18" value="100000.0">
+<DESCRIPTION>[MeV] Maximum refenergy for Unc_Flux1000</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN19" value="0.0">
+<DESCRIPTION>Minimum value for Energy_Flux100</DESCRIPTION>
+</PARAM>
+<PARAM datatype="int" name="TEMIN19" value="100">
+<DESCRIPTION>[MeV] Minimum refenergy for Energy_Flux100</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMAX19" value="100000.0">
+<DESCRIPTION>[MeV] Maximum refenergy for Energy_Flux100</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN20" value="0.0">
+<DESCRIPTION>Minimum value for Unc_Energy_Flux100</DESCRIPTION>
+</PARAM>
+<PARAM datatype="int" name="TEMIN20" value="100">
+<DESCRIPTION>[MeV] Minimum refenergy for Unc_Energy_Flux100</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMAX20" value="100000.0">
+<DESCRIPTION>[MeV] Maximum refenergy for Unc_Energy_Flux100</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN22" value="0.0">
+<DESCRIPTION>Minimum value for PL_Flux_Density</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN23" value="0.0">
+<DESCRIPTION>Minimum value for Unc_PL_Flux_Density</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN24" value="0.0">
+<DESCRIPTION>Minimum value for PL_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX24" value="5.0">
+<DESCRIPTION>Maximum value for PL_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN25" value="0.0">
+<DESCRIPTION>Minimum value for Unc_PL_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX25" value="5.0">
+<DESCRIPTION>Maximum value for Unc_PL_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN26" value="0.0">
+<DESCRIPTION>Minimum value for LP_Flux_Density</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN27" value="0.0">
+<DESCRIPTION>Minimum value for Unc_LP_Flux_Density</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN28" value="0.0">
+<DESCRIPTION>Minimum value for LP_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX28" value="5.0">
+<DESCRIPTION>Maximum value for LP_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN29" value="0.0">
+<DESCRIPTION>Minimum value for Unc_LP_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX29" value="5.0">
+<DESCRIPTION>Maximum value for Unc_LP_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN30" value="-1.0">
+<DESCRIPTION>Minimum value for LP_beta</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX30" value="1.0">
+<DESCRIPTION>Maximum value for LP_beta</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN32" value="0.0"/>
+<PARAM datatype="double" name="TLMIN33" value="0.0">
+<DESCRIPTION>Minimum value for PLEC_Flux_Density</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN34" value="0.0">
+<DESCRIPTION>Minimum value for Unc_PLEC_Flux_Density</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN35" value="0.0">
+<DESCRIPTION>Minimum value for PLEC_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX35" value="5.0">
+<DESCRIPTION>Maximum value for PLEC_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN36" value="0.0">
+<DESCRIPTION>Minimum value for Unc_PLEC_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX36" value="5.0">
+<DESCRIPTION>Maximum value for Unc_PLEC_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN37" value="-0.01">
+<DESCRIPTION>Minimum value for PLEC_Expfactor</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX37" value="1.0">
+<DESCRIPTION>Maximum value for PLEC_Expfactor</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN39" value="0.0">
+<DESCRIPTION>Minimum value for PLEC_Exp_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX39" value="5.0">
+<DESCRIPTION>Maximum value for PLEC_Exp_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN40" value="0.0">
+<DESCRIPTION>Minimum value for Unc_PLEC_Exp_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMAX40" value="5.0">
+<DESCRIPTION>Maximum value for Unc_PLEC_Exp_Index</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TLMIN41" value="0.0"/>
+<PARAM datatype="double" name="TLMIN42" value="0.0">
+<DESCRIPTION>Minimum value for Npred</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMIN51" value="50.0">
+<DESCRIPTION>Minimum energy for Flux_Peak(MeV)</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMAX51" value="100000.0">
+<DESCRIPTION>Maximum energy for Flux_Peak(MeV)</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMIN52" value="50.0">
+<DESCRIPTION>Minimum energy for Unc_Flux_Peak(MeV)</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMAX52" value="100000.0">
+<DESCRIPTION>Maximum energy for Unc_Flux_Peak(MeV)</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMIN55" value="50.0">
+<DESCRIPTION>Minimum energy for Flux_History(MeV)</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMAX55" value="100000.0">
+<DESCRIPTION>Maximum energy for Flux_History(MeV)</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMIN56" value="50.0">
+<DESCRIPTION>Minimum energy for Unc_Flux_History(MeV)</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TEMAX56" value="100000.0">
+<DESCRIPTION>Maximum energy for Unc_Flux_History(MeV)</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="5" datatype="char" name="TELESCOP" value="GLAST">
+<DESCRIPTION>name of telescope generating data</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="INSTRUME" value="LAT">
+<DESCRIPTION>name of instrument generating data</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="EQUINOX" value="2000.0">
+<DESCRIPTION>equinox for ra and dec</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="RADECSYS" value="FK5">
+<DESCRIPTION>world coord. system for this file (FK5 or FK4)</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="19" datatype="char" name="DATE" value="2020-10-29T18:49:42">
+<DESCRIPTION>file creation date (UTC)</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="DATE-OBS" value="2008-08-04T15:43:36.4941">
+<DESCRIPTION>start date/time of the obs. (UTC)</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="24" datatype="char" name="DATE-END" value="2018-08-02T19:13:14.9999">
+<DESCRIPTION>end date/time of the obs. (UTC)</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TSTART" value="2.39557417494176E8">
+<DESCRIPTION>mission time of the obs. start</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TSTOP" value="5.5493E8">
+<DESCRIPTION>mission time of the obs. end</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="1" datatype="char" name="TIMEUNIT" value="s">
+<DESCRIPTION>units for the time related keywords</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="2" datatype="char" name="TIMESYS" value="TT">
+<DESCRIPTION>type of time system that is used</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="MJDREFI" value="51910.0">
+<DESCRIPTION>Integer part of MJD corresponding to SC clock s</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="MJDREFF" value="7.428703703703703E-4">
+<DESCRIPTION>Frac. part of MJD of SC clock start</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="15" datatype="char" name="OBSERVER" value="Peter Michelson">
+<DESCRIPTION>GLAST/LAT PI</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="28" datatype="char" name="FILENAME" value="gll_pscP305uw9011iG5_v17.fit">
+<DESCRIPTION>name of this file</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="5" datatype="char" name="ORIGIN" value="LISOC">
+<DESCRIPTION>name of organization making file</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="14" datatype="char" name="CREATOR" value="PointSourceCat">
+<DESCRIPTION>software and version creating file</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="VERSION" value="v27">
+<DESCRIPTION>release version of the file</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="51" datatype="char" name="HDUDOC" value="GLAST Project Science Data products format document">
+<DESCRIPTION>Document descr</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="4" datatype="char" name="HDUCLASS" value="OGIP">
+<DESCRIPTION>format conforms to OGIP standard</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="5" datatype="char" name="HDUVERS" value="1.0.0">
+<DESCRIPTION>version of the format</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="7" datatype="char" name="HDUCLAS1" value="SRCLIST">
+<DESCRIPTION>an OGIP standard class</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="4" datatype="char" name="CDS-NAME" value="4FGL">
+<DESCRIPTION>Catalog Name</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="65" datatype="char" name="STVERS" value="/dsm/saplxglast/glast/anaconda2/envs/fermi-1.3.5/share/fermitools"/>
+<PARAM arraysize="17" datatype="char" name="PIPVERS" value="Gpipeline-v7r13p5">
+<DESCRIPTION>Pipeline code version</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="11" datatype="char" name="RUNNAME" value="P8R3_uw9011">
+<DESCRIPTION>Name of Run</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="14" datatype="char" name="RSPFUNC" value="P8R3_SOURCE_V3">
+<DESCRIPTION>Response function</DESCRIPTION>
+</PARAM>
+<PARAM datatype="int" name="TSMIN" value="25">
+<DESCRIPTION>Test Statistic Treshold</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="NPREDMIN" value="10.0">
+<DESCRIPTION>Minimum number of source events</DESCRIPTION>
+</PARAM>
+<PARAM datatype="int" name="EMIN" value="50">
+<DESCRIPTION>[MeV] low limit for the energy band</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="EMAX" value="1000000.0">
+<DESCRIPTION>[MeV] high limit for the energy band</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="3" datatype="char" name="ENERDISP" value="yes">
+<DESCRIPTION>Account for energy dispersion ?</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="SYSREL" value="0.0">
+<DESCRIPTION>Relative systematic error for flux</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="ERRUPLIM" value="2.0">
+<DESCRIPTION>Minimum Relative error for Upperlimits</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="TSUPLIM" value="1.0">
+<DESCRIPTION>Maximum TS for Upperlimits</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="ERPOSABS" value="0.0068">
+<DESCRIPTION>systematic value (deg) added in quadrature conf</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="ERPOSFAC" value="1.06">
+<DESCRIPTION>Systematic factor applied to conf95</DESCRIPTION>
+</PARAM>
+<PARAM datatype="int" name="TSCURMIN" value="9">
+<DESCRIPTION>TSCurv threshold for moving to curved spectrum</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="16" datatype="char" name="CHECKSUM" value="KNdANLd5KLdAKLd3">
+<DESCRIPTION>HDU checksum updated 2020-12-16T13:31:31</DESCRIPTION>
+</PARAM>
+<PARAM datatype="long" name="DATASUM" value="3260316208">
+<DESCRIPTION>data unit checksum updated 2020-12-16T13:31:31</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="ERFLUVAR" value="0.0">
+<DESCRIPTION>Relative systematic error for flux variability</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="7" datatype="char" name="VARMODE" value="loglike">
+<DESCRIPTION>Variability computation mode 'chi2'|'loglike'</DESCRIPTION>
+</PARAM>
+<PARAM datatype="double" name="VARMIN" value="21.6659943345">
+<DESCRIPTION>Variability index threshold</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="19" datatype="char" name="DATE-HDU" value="2020-02-21T10:44:49"/>
+<PARAM arraysize="5" datatype="char" name="STILVERS" value="3.3-3"/>
+<PARAM arraysize="42" datatype="char" name="STILCLAS" value="uk.ac.starlink.votable.FitsPlusTableWriter"/>
+<PARAM arraysize="62" datatype="char" name="HISTORY" value="File modified by user 'local1' with fv  on 2020-03-12T12:10:18">
+<DESCRIPTION>FITS HISTORY card values</DESCRIPTION>
+</PARAM>
+<PARAM datatype="int" name="TLMIN2" value="1"/>
+<PARAM datatype="int" name="TLMAX2" value="2"/>
+<PARAM datatype="double" name="TLMIN69" value="0.0"/>
+<PARAM datatype="double" name="TLMIN70" value="0.0"/>
+<PARAM datatype="double" name="TLMAX69" value="1.0"/>
+<PARAM datatype="double" name="TLMAX70" value="1.0"/>
+<PARAM datatype="double" name="TLMIN71" value="0.0"/>
+<PARAM datatype="double" name="TLMAX71" value="360.0"/>
+<PARAM datatype="double" name="TLMIN72" value="-90.0"/>
+<PARAM datatype="double" name="TLMAX72" value="90.0"/>
+<PARAM datatype="double" name="TLMIN73" value="0.0"/>
+<PARAM arraysize="33" datatype="char" name="Match type" value="Pair match; Best match, symmetric">
+<DESCRIPTION>Type of match which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="11" datatype="char" name="Match algorithm" value="Exact Value">
+<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="82" datatype="char" name="Join Type" value="1 and 2 (An output row for each row represented in both input tables (INNER JOIN))">
+<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="15" datatype="char" name="First input table" value="36: match(2,35)"/>
+<PARAM arraysize="19" datatype="char" name="Second input table" value="12: gll_psc_v27.fit"/>
+<FIELD arraysize="18" datatype="char" name="Name"/>
+<FIELD datatype="float" name="RAJ2000" ucd="pos.eq.ra;meta.main" unit="deg"/>
+<FIELD datatype="float" name="DEJ2000" ucd="pos.eq.dec;meta.main" unit="deg"/>
+<FIELD datatype="long" name="Num_VLASS"/>
+<FIELD datatype="long" name="Num_D5GHZ"/>
+<FIELD datatype="long" name="Num_D7GHZ"/>
+<!-- Dummy VOTable - no DATA element -->
+</TABLE>
+</RESOURCE>
+</VOTABLE>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                   50 / width of table in bytes                        NAXIS2  =                  893 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                    6 / number of columns                              EXTNAME = 'Joined  '           / table name                                     TTYPE1  = 'Name    '           / label for column 1                             TFORM1  = '18A     '           / format for column 1                            TTYPE2  = 'RAJ2000 '           / label for column 2                             TFORM2  = 'E       '           / format for column 2                            TUNIT2  = 'deg     '           / units for column 2                             TUCD2   = 'pos.eq.ra;meta.main'                                                 TTYPE3  = 'DEJ2000 '           / label for column 3                             TFORM3  = 'E       '           / format for column 3                            TUNIT3  = 'deg     '           / units for column 3                             TUCD3   = 'pos.eq.dec;meta.main'                                                TTYPE4  = 'Num_VLASS'          / label for column 4                             TFORM4  = 'K       '           / format for column 4                            TTYPE5  = 'Num_D5GHZ'          / label for column 5                             TFORM5  = 'K       '           / format for column 5                            TTYPE6  = 'Num_D7GHZ'          / label for column 6                             TFORM6  = 'K       '           / format for column 6                            DATE-HDU= '2021-04-13T14:53:40' / Date of HDU creation (UTC)                    STILVERS= '3.4     '           / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / STIL Author class      END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             4FGL J0000.5+0743 >ÃÕ@˜F                       4FGL J0003.3+2511 ?UùA…áî                     4FGL J0003.6+3059 ?gçPA˜Î                      4FGL J0004.0+5715 ?Ä7µBe˝                      4FGL J0005.6+6746c?µ/Báâ†                       4FGL J0006.6+4618 ?’∏ªB97È                     4FGL J0008.4+6926 @‹]Bä·æ                     4FGL J0008.9+2509 @YA…:ì                     4FGL J0009.2+1745 @±[Aé	                      4FGL J0009.2+6847 @|ÓBâñ                      4FGL J0009.7-1418 @-‡¡dﬂ;                     4FGL J0010.2-2431 @#⁄Q¡ƒ2-                       4FGL J0024.1+2402 @¡:ìA¿Jı                     4FGL J0026.1-0732 @—GÆ¿Ò\)                     4FGL J0030.6+0539 @ıAÚ@µ1ê                       4FGL J0030.9-3618 @˜Uõ¬=Ÿ                       4FGL J0031.0-2327 @¯4n¡ª™0                       4FGL J0034.6+6438 A
+ó$BÅGR                       4FGL J0035.2-1739 A©¡çK˚                     4FGL J0037.2-2653 A%¡◊$@                      4FGL J0039.7+4203 AøB(Bﬁ                     4FGL J0040.2-2725 A ˝"¡€lÙ                       4FGL J0045.8-1324 A7ãD¡Vqv                       4FGL J0045.9-2021 A7∆®¡¢ÏW                     4FGL J0052.1+6444 AP±[BÅ{Á                       4FGL J0054.4-1503 AYo¡pÍ≥                       4FGL J0055.7+4507 A_	B4c                     4FGL J0057.5+6814 AfbBàx’                      4FGL J0057.9+6326 AgÌëB}¡                     4FGL J0102.1+4458 Axπ$B3ﬂV                     4FGL J0102.3+1000 AyïÍA 1'                     4FGL J0104.6-0818 AÅSè¡                       4FGL J0106.1+1131 AÑ[#A8rG                       4FGL J0112.0+3442 Aê7B
+œë                     4FGL J0115.4-2917 Añﬁ¡ÍX‚                     4FGL J0116.8+6914 AôûBä{¶                      4FGL J0120.1+0505 A†\˚@¢ÍK                     4FGL J0122.4+1034 A§⁄ÜA),=                       4FGL J0125.3+6820 A™ûOBàÆø                       4FGL J0126.8+2412 A≠†˘A¡Æ                     4FGL J0128.1+7542 A∞HÈBói                       4FGL J0132.1-0956 A∏>´¡Å                      4FGL J0133.0+5931 A∫ÍBn ™                     4FGL J0137.3-3239 A¬»È¬ök                       4FGL J0138.5+0300 A≈©@@H                       4FGL J0139.5-2228 A«-C¡≥“T                       4FGL J0140.3+7054 A»™ôBçŒÛ                      4FGL J0142.5+6650 AÕBÖ´                       4FGL J0144.3+5959 A–≠CBo˝q                       4FGL J0150.4+4848 A‹ÍKBCAâ                      4FGL J0150.9+1230 A›—NAH7L                       4FGL J0153.3+5416 A‚õ	BY_              	       4FGL J0156.3-2420 AËü!¡¬≠                     4FGL J0158.4+1230 AÏ;AHÌ       |               4FGL J0159.0+3313 AÓ!ÀBﬁ∏              
+       4FGL J0159.8-2234 AÔö†¡¥õ⁄                       4FGL J0202.4+2943 AÙˆ`AÌ’g                     4FGL J0203.9+8120 A˜ÙB¢´k                       4FGL J0204.7+6656 A˘è˘BÖﬂŸ                     4FGL J0207.2-1832 A˛r¡îY                       4FGL J0209.8+2626 B€#A”wœ                     4FGL J0211.5+6219 BôByK)                     4FGL J0222.7+5016 BΩøBIµ                     4FGL J0224.8+2937 B€=AÌö                       4FGL J0226.9+7744 B˚JBõz˚                     4FGL J0230.3+1713 BcÒAâ«z                     4FGL J0230.4-1140 BuZ¡:Ø∏                       4FGL J0231.0+3505 BBf                       4FGL J0235.3+5650 Bd@Bcd&                      4FGL J0238.1-2621 B3¡“Â˛                       4FGL J0239.1+6634 B"—BÖ(¡                       4FGL J0240.2-0248 B 6Æ¿3¿                       4FGL J0245.0+4755 B%HB?≠]                     4FGL J0251.1-1830 B+"N¡î                     4FGL J0251.6+0628 B+ö@œo                       4FGL J0252.0-3657 B,N¬ŸK                       4FGL J0252.3-2707 B,VS¡Ÿ                       4FGL J0256.2-0408 B07µ¿ÑI∫                       4FGL J0259.0+0552 B3Ú@ºì                     4FGL J0300.4+3450 B4xlB`v                       4FGL J0302.5+3354 B6ÄùBöÓ                     4FGL J0302.7+5717 B6ƒBe&È                       4FGL J0304.6+6554 B8£TBÉ–!                     4FGL J0311.3+2940 B?QÉAÌh‹                       4FGL J0312.1-0921 B@¨¡™e                      4FGL J0312.7+2012 B@Ã0A°ª0                     4FGL J0314.1+2827 BB0A„û                     4FGL J0314.1+5033 BB2BJ:ì                       4FGL J0318.8+2848 BF‰ZAÊv+                       4FGL J0327.6+2620 BO´A“¨=                     4FGL J0328.5+6114 BPíoBt˝V       T                4FGL J0328.6-1129 BP§©¡7ÏW                     4FGL J0330.1+5038 BR0æBJàÈ                     4FGL J0330.7+5845 BRø}Bk[       	                4FGL J0333.4-2705 BU}V¡ÿ∞!                     4FGL J0336.0+7502 BXBñö                      4FGL J0337.5+2423cBYìèA√ù                     4FGL J0341.9+3153cB]ÿAˇ)_                       4FGL J0346.2+3235cBbGEBWY                     4FGL J0347.5+0722 BcïÍ@Ï?Ê                       4FGL J0358.1+2850 Bn]AÊ»Ä                       4FGL J0359.3+3626 BoTB¬[                       4FGL J0403.3+1249 BsN•AM/                       4FGL J0406.2+0639 Bv4¢@‘‡v                       4FGL J0409.2+2542 ByAÚAÕû                     4FGL J0409.4-3822 Byk¬x                     4FGL J0409.7+4006cByΩ•B o∏                       4FGL J0412.5+6519cB|àKBÇ™ô                       4FGL J0413.1-0304 B}1¿Dﬁ”                     4FGL J0414.3+4522 B~b∑B5x°              "       4FGL J0414.6+5711 B~≠‡Bd¿“                     	4FGL J0426.5+5434 BÖBﬁBZH                       4FGL J0427.3+0504 BÖ®ß@¢è\                       4FGL J0427.4+6433cBÖæ∏BÅ                       4FGL J0427.9+3632cBÖˆmB"∑                       4FGL J0433.0+1327 BàázAWVm                       4FGL J0435.5+3232 Bâ¿BB2a                     4FGL J0442.8+3609 Bçk¨Bß                       4FGL J0444.8-3514 BéiÜ¬o                       4FGL J0445.7+1535 BéﬂVAyìu                       4FGL J0447.2+2446 BèöQA∆)*                     4FGL J0448.3+2743 Bê,0A›–H                       4FGL J0448.7-2116 Bêc ¡™@                     4FGL J0453.3+2843 Bí´AÂ◊‹                      4FGL J0455.9+6757 Bì¸BáÍË                     4FGL J0502.2+3016 Bó AÚ3ú                     4FGL J0506.1+5028 BôÏBI‚Ç                      4FGL J0506.3-0620cBô2G¿ ∆?                      4FGL J0506.6+4545 BôPäB7-                       4FGL J0512.3+3329 Bú)’B                     4FGL J0527.1+1152 B£çπA=˚Á                       4FGL J0527.4+6647 B£∂9BÖòÆ                     4FGL J0529.1-2449cB§é¡∆ïÍ                      4FGL J0529.9-0224 B§Ù9¿Ë>                      4FGL J0531.7+1241cB•„◊AKS                       4FGL J0532.6+3358 B¶WÄBÓÃ                     4FGL J0533.6+5945 B¶’√Bo~                     	4FGL J0533.9+2838 B¶ıtAÂ1                       4FGL J0534.0+3746cBßB–                       4FGL J0534.2+2751 Bß$3Aﬁﬂ§                       4FGL J0535.3+0934 BßÆ}AQÉ                       4FGL J0536.1-1205 B®ä¡AÃ                       4FGL J0537.5+0959 B®¡HA∆®                     4FGL J0538.9+3549cB©y1BP.                       4FGL J0540.2+0655 B™@›Uõ                     4FGL J0540.6+5540 B™YXB^∞æ                       4FGL J0540.7+3611cB™^BÃ~                       4FGL J0543.9-0418 B´Ù,¿âÊõ                       4FGL J0544.4+2238 B¨7ˆAµ"h                     4FGL J0544.8+5209cB¨oBP§                       4FGL J0545.7+6016 B¨‚ABq‰                       4FGL J0546.5-1100 B≠H‹¡04                       4FGL J0548.6+1200 BÆR◊A@x                       4FGL J0551.7+0446 BØÂØ@òÁ                       4FGL J0551.8-2130 BØÊ˜¡¨ ≈                       4FGL J0552.0+2656cB∞A◊wö                       4FGL J0553.5+4810 B∞ÀÖB@∞æ                       4FGL J0553.6+0100 B∞œ?Åƒ3                       4FGL J0554.0-0839 B±ˆ¡
+{≥                      4FGL J0554.2-0259 B± v¿?!-                     4FGL J0555.1+0150cB±çü?ÏcÒ                     4FGL J0558.2+0132cB≥Ÿ?≈ëh                       4FGL J0559.3+0352 B≥¶¬@wÖ                       4FGL J0600.4+4949 B¥<]BGD–                       4FGL J0601.0-1016cB¥Éñ¡$sÇ                       4FGL J0607.9-1904 B∑Ù◊¡òãD                       4FGL J0608.6-2305 B∏M¡∏º                       4FGL J0609.0+2006 B∏Ç[A†”[       
+                4FGL J0609.0+2136cB∏ÄA¨ﬂ;       	               4FGL J0611.5-2918 BπÀ·¡Ív…                       4FGL J0612.6+1520cB∫QAAux’                       4FGL J0613.1+1749cB∫èvAéì@                       4FGL J0615.9+1416 Bªˆ`Ad~˙                       4FGL J0618.7+1211 BΩd@ABo                       4FGL J0620.1+2246 BæÏA∂Cñ                     
+4FGL J0620.4+1445 Bæ7sAlµ                       4FGL J0620.9+2201 Bæw?A∞%Ø                       4FGL J0622.5+3120 BøKÖA˙¥◊                       4FGL J0625.5+7029 B¿»öBå˛ë                     4FGL J0631.0+5626 B√ÇBaÃ0              
+       4FGL J0633.9+5840 Bƒı?Bj∏l                     4FGL J0634.6-3046cB≈Ut¡ˆ*ô                      4FGL J0642.4+1048 B…7YA-                       4FGL J0648.6-3623 BÃR|¬êÂ                      4FGL J0652.8-1855 BŒjX¡óg’                       4FGL J0656.5+4218 B–K6B)Ao                     4FGL J0658.7+2318 B—\íA∫kÓ                     4FGL J0700.8+1551 B“i«A}ß                     4FGL J0701.3-0403 B“ßz¿Å‡ﬂ                       4FGL J0701.5-2842 B“∆µ¡Â≥h                       4FGL J0705.8-0004 B‘È¸Ωå≤ñ                     4FGL J0708.6+1747 B÷TÒAéV÷                     4FGL J0709.1-1034cB÷ó
+¡)⁄                     	4FGL J0713.5-2555 Bÿ¡ˇ¡œr|                      4FGL J0715.7-1128 BŸ⁄k¡7Æ                       4FGL J0716.0-0826 B⁄=¡33                     4FGL J0722.7-2309cB›bÇ¡π5›                      4FGL J0723.1-3048 B›í:¡ˆp                      4FGL J0724.8+3016 BﬁhˆAÚ'R                       4FGL J0725.3-2550cBﬁ´¡Œ√˛       	                4FGL J0725.7-0549 BﬁÊ¿∫7µ                     4FGL J0731.0+6607 B·åqBÑ@™                     &4FGL J0731.5-1910cB·»¥¡ô^                     4FGL J0736.9-3231 B‰z≠¬                       4FGL J0737.4+6535 B‰øVBÉ.≤                       4FGL J0738.6+1311 BÂOﬂARÙ                     4FGL J0743.2+4034 BÁô¥B"P                       4FGL J0744.4-1403 BË;Á¡`“                        4FGL J0747.2-0736 BÈû≈¿Û~ë                     4FGL J0750.0+7140 BÎsBèV9                       4FGL J0752.0-2931 BÏ‹¡Ï6              	       4FGL J0753.1-2624cBÏî9¡”4◊                      4FGL J0754.9-3953 BÌ{W¬îï                     4FGL J0755.6+1855 BÌ—ÏAódZ                       4FGL J0755.9-0515 BÌıt¿®`™                      4FGL J0757.9+7304 BÓˆBí)≠                       4FGL J0757.9-1514 BÓ˜‹¡s¡æ                       4FGL J0800.5+3715 BIB	                       4FGL J0800.9+0733 Bs–@Ò†˘                     4FGL J0801.3-0617 B≠ë¿…ò»       C               4FGL J0803.2-2522 BÒ¢Î¡À≥                       4FGL J0806.8+5659 BÛl0Bcı®                       4FGL J0807.2+3312 BÛù/BŸK                       4FGL J0809.8+0507 BÙË
+@§3ú                       4FGL J0810.0-0505 Bı¿£(ç                      4FGL J0815.5+6554 B˜¬ÇBÉÃÕ                      4FGL J0821.5-1436 B˙À6¡iºj                      4FGL J0826.0-0157 B˝
+ıø˙d√              
+       
+4FGL J0827.6-0059 B˝ŒVø!-                       4FGL J0829.3+3729 B˛®¡B˚≥                       4FGL J0838.4-3952 Cù<¬Å;                       4FGL J0838.5+4013 C†ÚB Â`                       4FGL J0838.9-2502 C∫^¡»I                       4FGL J0840.6-3130 C)Ô¡¸◊                       4FGL J0849.0-2702 CA ¡ÿK)                       4FGL J0849.5+2710 CaÿAŸ^”                       4FGL J0850.4-2558 CûO¡œÀí       -                4FGL J0855.0+0720 C√3@Îµ                       4FGL J0859.8+0053 CÙM?f4                      4FGL J0903.5+4057 CÊ?B#Ÿ1                      4FGL J0904.6+5200 C'zBP	’       
+                4FGL J0906.1-1011 Câ>¡#¨                     4FGL J0906.8-2122 C¥a¡™˙≠                      4FGL J0910.1-1816 C	àì¡í%Ø                     4FGL J0910.9+6055 C	º¨Bs≤|                     !4FGL J0914.5+6845 C
+•ÅBâÄ∏                     4FGL J0916.9+7756 C=6Bõﬂ!                     4FGL J0919.3+6607 C◊îBÑA               
+       4FGL J0928.3-2713 CE¡Ÿƒ3                       4FGL J0930.9-3030 Cª¡ÙÛ                     4FGL J0931.4-3559 C⁄e¬˝V                     4FGL J0934.5+7223 C§ÒBêÃW                       4FGL J0935.5+1152 C„ÇA>7                      4FGL J0938.8+5155 C∑œBO≠C                     4FGL J0942.5+7620 C°HBò´D                     4FGL J0943.6+4207 CË¸B(wµ                       4FGL J0947.0-3548 C¿ÿ¬9$                      4FGL J0948.0-3859 C‰¬ˇ.                     4FGL J0949.8+7551 CváBó∫D              	       4FGL J0951.8-3711 CÛ[¬«z                       4FGL J0957.3-3851 CSÒ¬v`                       4FGL J0957.6-3051 CjË¡ˆÌë                       4FGL J0957.7-3510 Cm¬±'       Ñ                4FGL J0958.6-0522 C™	¿¨C˛                       4FGL J0959.1+5719 C ¡BeLò                       4FGL J1001.3-2040 CT¡•\∆                     4FGL J1002.3-2810 Cïº¡·cΩ       %               4FGL J1003.7+7049 CÒNBç§                       4FGL J1008.2-1000 C ¡ C˛       w                4FGL J1009.5-0034 CaˇøÒA                       4FGL J1014.6+6126 C®XBuøó                     4FGL J1017.4+5956 C_HBoÃ≥                     4FGL J1018.1-2705 CåÖ¡ÿ¡â                       4FGL J1018.3-0703 Cò_¿·˛]       
+                4FGL J1019.3+5625 CÿBa¨Ù              	       4FGL J1028.1-3550 C¡¬b∑                       4FGL J1028.4-1539 C∫¡z|Ó                     4FGL J1029.4-0828 C\í¡xl                     4FGL J1029.9+7335 Cz·Bì,ò                      4FGL J1030.7+6118 C≠‡Bu=•                       4FGL J1032.0+5725 C◊Be∞                     4FGL J1036.5-1809 C$–¡ë@O                       4FGL J1043.0+5316 C ¬BU9                       4FGL J1047.2+6740 C!—ÏBáX’                     4FGL J1049.8+2741 C"uA›z                     4FGL J1049.9-3658 C"}I¬Í                       4FGL J1055.6-0719 C#Á¬¿Í7µ                       4FGL J1055.7+1033 C#ÌIA(ﬂ§                       4FGL J1055.7-1807 C#ÚÂ¡ê˜f                     4FGL J1059.4+0226 C$ﬁä@:˚                     4FGL J1059.4+2148 C$⁄AÆÇﬁ                     4FGL J1100.0-2044 C%Z¡•ÛÇ                      4FGL J1102.3+6715 C%ôBÜÉ˛                       4FGL J1102.4+0246 C%üﬂ@1†'                       4FGL J1106.2+7303 C&éBík       
+               4FGL J1106.7+3623 C&∞Bô                       4FGL J1106.7-1742 C&≤Ú¡ç∑È                       4FGL J1109.8+4406 C'u÷B0hX                       4FGL J1111.4+0137 C'Ÿ∫?–ÜY                     4FGL J1112.0+1021 C(GA%º”       ã              4FGL J1114.6+1225 C(©¸AF±ƒ                     4FGL J1119.9-1007 C)¸j¡"ë                       4FGL J1122.0-0231 C*ÅH¿!4                       4FGL J1122.2+3926 C*è˘B…’       
+                4FGL J1122.5-1440 C*§¡j‘ï                     4FGL J1124.1-1203 C+W¡A·                       4FGL J1125.2+2557 C+NÌAœ°À                       4FGL J1130.5+1400 C,•%A`!                       4FGL J1146.0-0638 C0Äi¿‘kQ                     4FGL J1150.8-1905 C1∏¡òµ›                       4FGL J1153.7+1857 C2pÿAó†ê                       4FGL J1155.2-1111 C2—À¡3%                     4FGL J1158.8-1430 C3µt¡hÅ                      4FGL J1202.9+5818 C4ºÕBi="       7                4FGL J1203.5-1748 C4·ê¡éjË                     4FGL J1207.4-1840 C5‹Ö¡ïWs                     4FGL J1208.2+1158 C6ÿA?ì                       4FGL J1210.1+3241 C6âßB¿Ï                       4FGL J1214.5-2318 C7†¡∫}ã                     4FGL J1216.2+0537 C8´@≥˛]                       4FGL J1216.2-1550 C8∑¡}_Ÿ                       4FGL J1217.2-2500 C8R¡»V                       4FGL J1218.6-1049 C8©¡-<6                       4FGL J1220.1-2458 C9¡«»¥                     4FGL J1220.5-2745 C9%?¡ﬁæ                       4FGL J1221.4-0634 C9^ø¿“®¡                      4FGL J1224.6+7011 C:,qBådú                       4FGL J1226.5+3023 C:£ AÛo                       4FGL J1229.5-3048 C;aÀ¡ˆyß                       4FGL J1232.1+5953 C<zBoâR                       4FGL J1233.0+1333 C<BÇAXÊ2                     4FGL J1239.7-3455 C=ÓÑ¬µ%                       4FGL J1243.5+5311 C>‡UBT ¶                       4FGL J1243.7+1727 C>ÓAã©¸                      4FGL J1252.7-2520 CA-"¡ À«                      4FGL J1256.8-1333 CB6È¡Xÿ                       4FGL J1256.9+2736 CB=‡A‹‹]                       4FGL J1258.4+6554 CBù6BÉŒp                       4FGL J1258.5-3406 CB§a¬je                      4FGL J1304.4+1203 CDÑA@¸P                      4FGL J1304.6+0539 CD**@µS¯                       4FGL J1309.3+8035 CEUB°,J       	                4FGL J1317.5-0153 CG`;øÚ≥h                       4FGL J1318.1-3937 CGá¬¬áz                       4FGL J1318.3-1148 CGô¡<o                       4FGL J1326.0+3507 CIÄ4B|π                     4FGL J1331.3-3818 CJ’…¬72                       4FGL J1334.8-3856 CK≥√¬√∞                       4FGL J1346.5+5330 CN•…BVæ                       4FGL J1350.9-2757 COª≥¡ﬂ†ê                      4FGL J1356.6+0234 CQ)ı@$Ú|                     4FGL J1359.9+3616 CQ˝ëB!b                     4FGL J1401.7-3217 CRrG¬&õ                       4FGL J1403.7+1513 CRÔ∏As†'                       4FGL J1407.4-0820 CSﬂ}¡x’                       4FGL J1407.7-3017 CSÔ˘¡ÚIR                       4FGL J1408.0+3834 CTZBRâ                     4FGL J1408.6-2917 CT)ß¡ÍTï                      4FGL J1408.7-3747 CT.Ÿ¬'’                       4FGL J1410.7+7405 CTØŸBî.                     4FGL J1415.9-1504 CU˝¡q"—                       4FGL J1421.4-1655 CW]ë¡ám˙                     4FGL J1429.8-0739 CYsÇ¿Ù—∑                       4FGL J1436.4+3900 C[±B i                       4FGL J1441.4-1934 C\Y¥¡ú†\                     4FGL J1442.0+0732 C\ÖZ@Ò}ø                     4FGL J1442.1-2800 C\ä	¡‡                       4FGL J1442.1-3707 C\äX¬Ü                       4FGL J1444.1+7601 C]	ìBò(                     4FGL J1444.8+3645 C]4BÆ                       4FGL J1450.8-1424 C^µ˜¡f~ë                     4FGL J1454.3-3946 C_ï?¬S                       4FGL J1458.8-2120 C`¥¡™µ›                     4FGL J1500.2+2640 Ca]A’nc                       4FGL J1502.6+0207 Ca¶˝@9X                       4FGL J1504.6+4343 Cb(‚B.„à                       4FGL J1507.1-1901 Cb…‚¡ò?                       4FGL J1510.9+0551 CcΩd@ªe˛                       4FGL J1513.7-1519 CdqÀ¡uTa                      4FGL J1516.4-2640 Ce¶¡’q                      4FGL J1519.7+6727 CeÒUBÜÍå                     4FGL J1525.7+1503 Cgp Ap–}                       4FGL J1526.6-2743 Cg´¿¡›‹í                       4FGL J1527.3-3103 Cg”3¡¯Çu                       4FGL J1527.8+1013 Cg¯çA#®X                     4FGL J1528.4+2004 Ch‡A†ö‘                     4FGL J1530.0-1522 ChÄH¡v∞                     
+4FGL J1530.5+5850 Ch•FBkW?                       4FGL J1531.6+0406 ChÏ]@É®X                     	4FGL J1532.3-3857 Ciú¬ÿ»                       4FGL J1532.9-0313 Ci:7¿Nö‘                       4FGL J1534.3-3312 Ciî{¬œ                       4FGL J1536.0-2729 Cj˛¡€ÈD                       4FGL J1538.9+0425 Cjº@ç”√                       4FGL J1543.1+4209 CkÃãB(ûû                       4FGL J1543.6-0244 CkË_¿/–}                      4FGL J1545.5+2839 Cl`™AÂ<                       4FGL J1546.8-3244 Cl∑8¬˙≠                       4FGL J1547.9+0445 Cl˙¡@ò                       4FGL J1550.6+6027 Cm™BqÿÆ                      4FGL J1555.2+7103 Cn“ABé}                       4FGL J1557.2+3822 CoP}BÉ‰                     +4FGL J1600.4+0407 Cp]@ÉÚ                      4FGL J1603.6-0451 CpÍ·¿õáî                       4FGL J1608.4+0055 CrÙ?kdZ                       4FGL J1612.1+1407 CsAaﬁj                      4FGL J1612.4+0409 Cs6@Ñ˙≠                      !4FGL J1613.1-3840 CsJ	¬≥M                     4FGL J1615.3-1512 Cs’Z¡s[W              
+       
+4FGL J1620.9+4852 Cu>wBCÅ                       4FGL J1621.0-2625 CuD◊¡”kÓ                       4FGL J1621.9+6706 Cu~≤BÜ9                       4FGL J1623.7-2315cCuÌd¡∫x                       4FGL J1625.3-2338cCvTM¡Ω$                       4FGL J1627.7+3219 Cv§BI                      4FGL J1631.7-2319cCwÿ¡∫éø       	                4FGL J1631.8+4144 CwÙ9B&ˇ}                       4FGL J1632.5+3839 Cx!|B¢N                      4FGL J1637.5+3005 Cye9A≤ˇ                       4FGL J1639.0-2727 Cyƒú¡€∂„                      4FGL J1641.3-2908 CzV…¡ÈI                       4FGL J1641.5+2017 CzaA¢Z                       4FGL J1643.1+1436 Cz«Ai¢4       	                4FGL J1644.1-3055 C{È¡˜W
+       	                4FGL J1644.8+1850 C{4nAñ≥3                     4FGL J1645.0+1654 C{D©Aá=                     4FGL J1648.1-1547 C|¡|∞!                     4FGL J1648.7+4834 C|1BBD∂                     4FGL J1653.0+3640 C}@\Bπ¡                       4FGL J1655.7-2411 C}Úo¡¡í£                       4FGL J1655.9-3940 C}˙=¬≠C                      4FGL J1657.4-3917cC~Z*¬*e                       4FGL J1658.5+4315 C~•mB-                        4FGL J1659.2-1443 C~Œû¡kÆ                      4FGL J1659.6+4918 C~Á¬BE7L                       4FGL J1700.0-0122 C‰øØÀí                       4FGL J1700.4-2746 CQ¡ﬁAÚ                       4FGL J1705.5+2907 CÄ1DAË§                       4FGL J1706.8+1319 CÄ\FAUP±                       4FGL J1708.2+5519 CÄÜ≤B]K·                       4FGL J1709.4-2127 CÄ≠à¡´¶µ                     4FGL J1709.9-0900 CÄΩ‡¡:˚                      4FGL J1710.0+4629 CÄ¡B9Ô“                     4FGL J1710.3-3039 CÄ  ¡ı9X                       4FGL J1710.8+1135 CÄ⁄ıA9ñº       	                4FGL J1711.0-3002 CÄ‚è¡cΩ                      4FGL J1711.9-1922 CÄ˝"¡öÿ                      4FGL J1713.0-0521 CÅ!b¿´µt                       4FGL J1714.6+3228 CÅS¯Bﬂ;                       4FGL J1714.8-1421 CÅ[è¡e‹∆                       4FGL J1714.8-3849 CÅ\≥¬F®                      4FGL J1714.9-3324 CÅ^z¬ßm                     4FGL J1716.1+2309 CÅÑnAπ=Ÿ                     4FGL J1717.0-3218 CÅ†æ¬?H                       4FGL J1717.8+1955 CÅ∫AüV°                     4FGL J1717.8+3925 CÅª≥BØO                       4FGL J1719.3-3424 CÅÍa¬	üp                       4FGL J1720.6+0708 CÇ˜@‰≥h                      4FGL J1721.4+1131 CÇ-√A8u˜                     4FGL J1721.4+2529 CÇ-)AÀÏ"                       4FGL J1722.1-3205 CÇCè¬ Z                       4FGL J1722.6-3135 CÇV%¡¸¿∏                       4FGL J1724.5-3008 CÇíì¡Ò+k                     4FGL J1724.7-3737 CÇôr¬à                       4FGL J1725.1-1924 CÇ¶O¡õ9ı                      4FGL J1725.5+0840 CÇ± A
+¨                      4FGL J1726.7-3930 CÇŸD¬m                       4FGL J1726.8-2659 CÇ€¡◊˝Ù                      4FGL J1727.4+0326 CÇÓz@\…Ü                     4FGL J1727.6-0849 CÇı?¡¬                       4FGL J1728.0-3550 CÉ-¬`v       
+                4FGL J1729.0+6103 CÉ!ﬁBt=q                       4FGL J1729.2-2509 CÉ)v¡…?Ê                       4FGL J1729.4-2831 CÉ,Í¡‰0!                      4FGL J1730.3-2913 CÉI’¡È◊s                     4FGL J1730.4-0359 CÉMÁ¿Åÿ                      4FGL J1730.5+6018 CÉQeBq49                     4FGL J1730.8-1123 CÉ\t¡6_Ÿ                     4FGL J1730.8-3806 CÉ\j¬s–                       4FGL J1731.6+0630 CÉv@–                       4FGL J1731.7-1850 CÉv}¡ñ¨q                       4FGL J1732.7-2559 CÉòó¡œ‡™                       4FGL J1733.2-2915 CÉßO¡Íä                      4FGL J1733.4+2235 CÉØ5A¥ÆI                     4FGL J1733.9-2220 CÉøY¡≤´‘                       4FGL J1734.0-2933 CÉ¡£¡Ïh
+                       4FGL J1734.5-2818 CÉ“Ú¡‚jË                       4FGL J1734.6-2912 CÉ‘¢¡È´                       4FGL J1735.3-0717 CÉÎà¿È!-                     4FGL J1737.1-2901 CÑ#J¡Ë7µ                      4FGL J1737.2-2421 CÑ'm¡¬Ó/                       4FGL J1737.2-2808 CÑ'H¡·ö                       4FGL J1737.3-3332 CÑ+Î¬"Ç                       4FGL J1737.6-2350 CÑ62¡æ∆?                       4FGL J1738.1-2453 CÑEq¡«&L                       4FGL J1738.8-3241 CÑZ¬¡                        4FGL J1739.1-1059 CÑdM¡/Í≥                     4FGL J1739.2-2717 CÑh∏¡⁄\]                       4FGL J1739.3-2531 CÑk¡Ã5®                      4FGL J1739.5-2929 CÑpR¡Î‚Î                       4FGL J1739.7-2836 CÑw´¡‰—É                       4FGL J1740.1-1928 CÑÉÎ¡õ‘˛                      4FGL J1740.6-3430 CÑî6¬
+
+å                       4FGL J1740.8-1832 CÑõü¡îb                       4FGL J1741.3-3357 CÑ¨)¬”u                       4FGL J1741.5-2344 CÑ±ƒ¡Ω˚                       4FGL J1741.6-2730 CÑ¥ ¡‹                       4FGL J1742.0-3020 CÑ¿≈¡ÚØÉ                       4FGL J1742.5-2833 CÑ—¡‰xl                       4FGL J1742.8-2246 CÑ‹º¡∂,•                     4FGL J1743.0-3201 CÑ‚ı¬ y                      4FGL J1743.4-2406 CÑÔ¡¿‘˛                     4FGL J1743.4-3406 CÑÌd¬m˙                       4FGL J1743.9-3539 CÑ˝ï¬®X       #                4FGL J1744.0-1311 CÖk¡SÌ                      4FGL J1744.0-2504 CÖ ﬂ¡»©_                       4FGL J1744.7-1557 CÖ°¡ff                      4FGL J1744.9-2153 CÖj¡Ø!ñ                       4FGL J1744.9-3322 CÖÁ¬}"                       4FGL J1745.3+2338 CÖ,"AΩ       	                4FGL J1745.6-3626 CÖ4˚¬¿“                       4FGL J1747.7-2141 CÖxO¡≠ÑÅ                     4FGL J1747.8-0316 CÖ{	¿QN<                     4FGL J1747.8-1827 CÖ|ú¡ì¶Å                       4FGL J1748.4+1601 CÖçÁAÄ-C                       4FGL J1749.0-2119 CÖ°ﬁ¡™éV                       4FGL J1749.6-3143cCÖ≥à¡˝Ãò                       4FGL J1749.8-0303 CÖª)¿CP±                      4FGL J1750.0-3849 CÖ¡¬E÷                       4FGL J1750.4-1721 CÖÕ6¡ä‚Ç                      4FGL J1750.6-1906 CÖ’¡ò·|                      4FGL J1750.8-1246 CÖ‹º¡L{≥                       4FGL J1750.9-2655 CÖﬂ°¡◊u%                       4FGL J1750.9-3301 CÖ›j¬ï                       4FGL J1751.1+0109 CÖ‰a?î~(                      4FGL J1751.1-3455 CÖ„Ö¬∂+       
+                4FGL J1752.0+3606 CÜ-BwL                     4FGL J1752.3-3139 CÜ
+Œ¡˝7Ä                       4FGL J1753.9+2443 CÜ?pA≈÷m                      4FGL J1754.3-2915 CÜK¡Í¬                       4FGL J1754.3-3236 CÜK⁄¬h$                       4FGL J1754.6-2933 CÜT‡¡Ïj                       4FGL J1754.8-3200 CÜZ¬  ∏                     4FGL J1755.3-3937 CÜj	¬}"       
+                4FGL J1755.5-3734 CÜr˚¬F?                       4FGL J1755.9+0953 CÜ}÷A8Ü                       4FGL J1756.3+0236 CÜãM@'RT                       4FGL J1757.1-1926 CÜ£6¡õîØ                       4FGL J1757.1-3554 CÜ§T¬ôË                       4FGL J1757.6-2731 CÜ≥[¡‹9¡                       4FGL J1758.5-3219 CÜ–Ú¬PH                       4FGL J1759.0-0107 CÜ·ˇøèO                       4FGL J1759.2-0243 CÜÊ˝¿.§©                       4FGL J1759.6-1850 CÜˆL¡ñ∫*                       4FGL J1759.7-2354 CÜ˘ ¡ø9ı                       4FGL J1759.8-1250 CÜ˙≠¡Mk∫                      4FGL J1800.1-0323 CáP¿Yp§                      	4FGL J1800.2-2952 Cá÷¡Ó¯°                       4FGL J1800.5-2910 Cá¡ÈcT                       4FGL J1801.8-2358 Cá:-¡ø‹í                       4FGL J1802.1-2652 CáEõ¡÷¯°                       4FGL J1802.4+3634 CáM?BO(                       4FGL J1802.4-3041 CáNÆ¡ıóˆ                       4FGL J1803.1-2724 Các·¡€T                        4FGL J1803.3+2425 CájËA√kÖ                       4FGL J1803.5-1639 CáqÜ¡Ö?H                       4FGL J1803.7-3207 CávÛ¬ }Ù                       4FGL J1803.8-2908 Cá{	¡È+k                     4FGL J1804.0-1124 CáÄo¡6qv                       4FGL J1804.4-0852 Cáè!¡È                     4FGL J1804.9-1745 Cáû/¡éä                       4FGL J1804.9-3001 Cáûœ¡4n                       4FGL J1805.7+3401 Cá∂òBæ                     4FGL J1806.1-3344 Cá≈C¬Ú-                       4FGL J1806.2-1347 Cá«“¡\±ƒ                       4FGL J1808.1-1234 CàŸ¡I4n                     4FGL J1808.2-1055 Càs¡.¡U                      4FGL J1808.2-3005 Cà	K¡æ´                       4FGL J1808.4-3358 Cà¬ÌC                       4FGL J1808.5-3701 Cà;¬V                      4FGL J1809.0-2853 Cà"x¡Áº                       4FGL J1809.8-2408cCà:N¡¡%Ø                      4FGL J1810.3+1332 CàLÅAX«z                       4FGL J1810.4+1700 CàLÍAàx                       4FGL J1810.5-1415 CàP˘¡d+                     4FGL J1810.8-3347 CàZÂ¬1ﬁ                       4FGL J1811.0-2725 Càa’¡€`B                      4FGL J1811.7-1442 Càv}¡kDg       	                4FGL J1811.9-2336 Cà¡ºË
+                       4FGL J1812.2-0856 Càâå¡(ç                       4FGL J1812.4+4441 CàétB2≈à                       4FGL J1812.8-3144 Càú¡˝ÛM                     4FGL J1813.2-1128 Cà¶≈¡7∞Ú                      4FGL J1813.5+2819 Cà≤4A‚úC                     4FGL J1813.7-1152 CàπK¡=˙D                     4FGL J1814.2-1012 Cà«Ê¡#lã       	                4FGL J1814.2-3000 Cà…D¡M                       4FGL J1814.4+2429 CàŒ+A√ÎQ       	              4FGL J1814.6-2537 Cà÷I¡Ã¯°                       4FGL J1814.7-3420 Càÿf¬	]d                       4FGL J1815.1+5917 CàÊLBm2-                      4FGL J1815.3-1336 CàÏa¡YÆÊ                       4FGL J1816.1-3908 Câd¬çÌ       
+                4FGL J1816.4-0057 CâÑøt÷°                     4FGL J1816.4-2727 Câï¡€¶Å                     4FGL J1816.8-2800 Câ‚¡‡!ñ                       4FGL J1817.5-1034 Câ2K¡)*ô                       4FGL J1817.6-3251 Câ4t¬l=                       4FGL J1817.7-2517 Câ8∏¡ M”                       4FGL J1817.9-1135 Câ>j¡9ã¨                       4FGL J1817.9-3334 Câ=m¬Jr                       4FGL J1818.0-1339cCâBe¡Zqv                       4FGL J1818.3-1233 CâIÏ¡H‹]                       4FGL J1818.5+2533 CâR◊AÃsÎ                      4FGL J1818.5-2036 CâQƒ¡§Ï¿                      4FGL J1818.6+1316 CâSåAT^û                      4FGL J1818.8-0828 Câ\M¡x                     4FGL J1818.8-2255 Câ[{¡∑_p                       4FGL J1819.4-1102 Câné¡0ï       
+               4FGL J1819.9-1300 Câ}M¡Pá                     4FGL J1819.9-1530 Câ~∏¡xx                      4FGL J1819.9-2926 Câ~µ¡ÎÉG                     4FGL J1820.3-2646 Câå)¡÷7                       4FGL J1820.7-3217 Câòo¬)≠                       4FGL J1821.5-2531 Câ≤e¡Ã7Ä                       4FGL J1821.6+6636 Câ¥˛BÖ7ˆ                     4FGL J1822.6-2502 Câ‘‰¡»RΩ                       4FGL J1822.8-1118 Câ€¡5 “                      4FGL J1823.2+1209 CâÁABÑM                      4FGL J1824.2+1231 CäEAH{≥                       4FGL J1824.2-0621 Cä±¿Àqv                      4FGL J1824.7+2403 CäÏA¿Ñ∂                       4FGL J1826.2-2830 CäH¸¡‰ ˘                       4FGL J1826.5-1202cCäS¡@∆?                     4FGL J1828.1-1312 CäÉà¡S:˚                      4FGL J1828.2-3252 Cäá2¬zx                     4FGL J1829.6-2545 Cä¥Å¡Œ
+=                      4FGL J1830.0-1515cCä¬∞¡t!                      4FGL J1830.1-0212cCä√[¿†'                       4FGL J1830.7-3219 CäŸK¬N<                       4FGL J1831.2+0202 CäË∏@                       4FGL J1831.6-0223cCäÙÓ¿»                       4FGL J1832.4-0152cCã)ø'R                       4FGL J1834.3+0613 CãI±@«8                     4FGL J1834.7-0724cCãWv¿Ì8                     4FGL J1834.9-0800 Cã_.¡ 4       	                4FGL J1834.9-2819 Cã_æ¡‚â7                     4FGL J1835.1-0517 Cãd˚¿©àf                       4FGL J1836.8-2354 Cãõ	¡ø@Ï                       4FGL J1836.9+4439 CãûîB2§@                     4FGL J1837.9-0620 CãΩπ¿À∏                       4FGL J1838.0-0516 Cã¡£¿®›/                       4FGL J1838.2+3223 Cã»‹Bô1                      4FGL J1838.4-0545 CãŒw¿∏g8                     4FGL J1838.5+3837 Cã—¸Bwö                       4FGL J1839.0-1502 Cã‚x¡p«z                      4FGL J1840.4-1139 Cå¢¡:j                      4FGL J1840.4-1705 CåÒ¡àæw                      4FGL J1841.6+7113 Cå5ŸBétF                     4FGL J1842.1+2737 CåD◊A‹ˇó                      4FGL J1842.2-0328 CåGz¿^ﬂ§                       4FGL J1843.3-1242 Cåk¡Kh‹                     4FGL J1843.7-0326 Cåw8¿[˜œ                       4FGL J1844.7-2110 Cåòˆ¡©tT                       4FGL J1844.8-0957 Cåö¡C˛                       4FGL J1845.0+0159 Cå°Ô?ˇök                       4FGL J1846.0+0507 Cå¿ˆ@§              
+       4FGL J1847.0-0625 Cå·N¿Õ_p                     4FGL J1847.2-0141 CåÁ‹øÿ†ê                       4FGL J1847.2-0200cCåÈ|¿≥                       4FGL J1847.7+3543 Cå¯êBÈ                       4FGL J1848.2-0016 Cçßæä≥h                      4FGL J1849.4-0117 Cç-…ø¶B[                       4FGL J1850.2-0201 CçI_¿•                     4FGL J1850.7-3126 CçW’¡˚èë                      4FGL J1850.8-1105 CçZD¡1iD                       4FGL J1851.5+0718 Cçq£@ÈÙà                      4FGL J1851.9-1522 Cç~S¡uˆ+                       4FGL J1852.6-1159 Cçï¡? X                       4FGL J1853.2-0922cCç©	¡¸                       4FGL J1853.3-2447 Cç¨¿¡∆`v                      4FGL J1853.6-0620 Cç∂L¿Ào                     4FGL J1854.7+0153 Cçÿ˘?Ú^5                       4FGL J1854.9+4054 Cç›¨B#ù≤                      4FGL J1855.2+0456 CçËo@û*ô                       4FGL J1855.2+0756 CçÁ˝@˛M”                       4FGL J1855.3-0740 CçÍ^¿ıÆ                       4FGL J1855.6-3603 Cçı¬>ë                       4FGL J1855.8+0150 Cç˙ì?ÎÌ˙                       4FGL J1856.1-1222 Cé6¡F i                       4FGL J1856.5+1735 Cé¡AåÃò              
+       4FGL J1857.8-3220 Cé:[¬bh                       4FGL J1858.0+0354 CéBh@zkQ                     4FGL J1858.0-1052 CéBÇ¡-Á’                       4FGL J1858.3-1318 CéJ ¡U                       4FGL J1858.9+3636 Cé]ŸBt◊                       4FGL J1859.3+0058 Céjì?zÁ’                       4FGL J1859.8+1545 Cé|∆A|A                      4FGL J1900.7+0426 Céòö@é ≈                       4FGL J1900.9+0538 CéúÁ@¥[¿                       4FGL J1901.1+0730 Cé•ø@'R                      	4FGL J1901.5-1112 Cé≤Ω¡34                     4FGL J1901.5-2208 Cé±$¡±                      4FGL J1902.2+0448 Cé…K@ô€ı                       4FGL J1902.4-3417 CéÕÅ¬	0;                       4FGL J1902.5+0654 Cé“k@›Á                      4FGL J1903.5-0825 Céä¡¥9                       4FGL J1904.4-1129 Cè´¡7¯°                       4FGL J1904.6-2713 Cè¡Ÿ…∫                       4FGL J1904.7+0615 CèÄ@»7                       4FGL J1904.7-0708 Cè≈¿‰d√                      4FGL J1905.8+4942 Cè<jBF◊®                       4FGL J1906.0-1718 CèBa¡äÖº                     4FGL J1906.1+1651 CèE9AÜÎ                      4FGL J1906.4-1757 CèN+¡èõq                      4FGL J1908.7+0812 Cèó°AE9                      4FGL J1908.8-0131 Cèõø√Ùà                      4FGL J1910.2+0904cCè∆ŸA5®                       4FGL J1910.8+6300 Cè€èB|£                       4FGL J1911.1-3221 Cè‰x¬r                       4FGL J1911.3+1055 CèÏãA.¿É                       4FGL J1911.8+1447 Cè¸"Alºj                       4FGL J1912.0+0927 CêAg8                       4FGL J1912.2+3621 Cê	_Bg°                       4FGL J1912.2-3636 Cêæ¬t¢                       4FGL J1912.5+1320 CêÏAUï                       4FGL J1912.7+4610 Cê∏B8∑Ä                       4FGL J1913.4-1526 Cê,˛¡w1ê                      4FGL J1913.4-2652 Cê-õ¡◊‰                       4FGL J1913.5-0923 Cê0¡=q                       4FGL J1914.7+1012cCêWA#o“                       4FGL J1917.6+2609 Cê≥@A—>                       4FGL J1917.6-3204 Cêµ”¬ HŒ                       4FGL J1919.4+1313 CêÔµASßá                       4FGL J1920.0-2622 CëÚ¡”                       4FGL J1920.7+1334 CëﬂAYO                       4FGL J1924.8-1035 CëöG¡)tT                       4FGL J1925.3+1522cCë™ŒAuÎÓ                       4FGL J1925.4+1616 CëÆ<AÇ4◊                      4FGL J1929.0+1729 Cí ¡AãÏ"                     4FGL J1931.0+1754cCía4AèSè                       4FGL J1931.1+1656 CídqAáçP                      4FGL J1933.4-2711 CíÆø¡Ÿóç                      4FGL J1934.2+1036 Cí»ùA)õ¶                       4FGL J1934.2-1446 Cí«¡lué                       4FGL J1935.0-0553 Cí·-¿º«                     4FGL J1936.6+1921 CìÕAö‘ï                       4FGL J1937.1-0444 Cì$t¿ó”√               	       4FGL J1939.7-1242 Cìwª¡Kfœ                       4FGL J1940.2-2511 Cìá!¡…~(                      4FGL J1943.9+2841 Cì˝zAÂêÀ                       4FGL J1944.8+4301 CîùB,¨                     4FGL J1946.5-1527 CîPf¡wrG                     4FGL J1947.0+0031 Cî`À?8Ô                     4FGL J1947.1+1729 Cîc:Aã‰√                     4FGL J1947.6-1121 CîuC¡5◊‹                      4FGL J1948.0-2845 CîÇÇ¡Ê%                       4FGL J1948.1+2511 CîÉ∂A…|                       4FGL J1948.9+3414 CîúÙBıZ                       4FGL J1949.2-1453 Cî®y¡n_p                     4FGL J1950.6+2416 Cî‘ÅA¬?H                       4FGL J1951.0+2523 Cî‚hAÀ&È                     !4FGL J1951.6+2621 CîıA“‘,                       4FGL J1953.5+3841 Cï1DB¿ù                     4FGL J1954.5+2420 CïR·A¬Ãò       	                4FGL J1954.8+2543cCï\&AÕæ                       4FGL J1959.9+1833 Cï˛∏Aîy	                       4FGL J2001.5+1611 Cñ1XAÅ{J                       4FGL J2001.5-0958 Cñ2ﬁ¡µt                      4FGL J2006.4+1834 CñœæAîé"                       4FGL J2006.4-0354 CñœV¿zär                       4FGL J2007.0+0707 Cñ‡'@‰¬                       4FGL J2007.9+2511 CñˇA…å~                     4FGL J2008.4+1619 CóAÇío                     4FGL J2009.5+2425 Có2ÚA√W‹                       4FGL J2009.9-2116 Có<˜¡™7L                      4FGL J2015.3+0758 CóÎ @ˇT                        4FGL J2017.3+3525 Cò,≥B∞æ                     4FGL J2017.9-0114 Cò=üøû}V                       4FGL J2018.0+7903 CòBBû7                       4FGL J2021.9+3609 Còæ?B°|                     
+4FGL J2023.3-1947 CòÎÖ¡ûGÆ                       4FGL J2026.0+4718 Cô@ÜB=8l                      4FGL J2026.3+1431 CôL•Ah\)                     4FGL J2027.0+2811 CôbA·ÑÍ                      4FGL J2029.1-3050 Cô•¡ˆÆI                       4FGL J2029.4+1013 Cô≠~A#àŒ       	               4FGL J2030.5+2235 Cô—KA¥¡â                     4FGL J2032.9-0005 Cö–Ω¨<ü                       4FGL J2035.0+3632 Cö`ÈB%˛                     4FGL J2035.3+0354 Cökü@zär                       4FGL J2035.3+0557 Cöiß@æÂ`                       4FGL J2036.2-0207 Cöà
+¿É                     4FGL J2036.3+5642cCöå9Bb‹                       4FGL J2037.0-2826 Cö†O¡„Å£                       4FGL J2040.4+0312 Cõ@MS&                       4FGL J2041.1+4736 Cõ%÷B>i_                       4FGL J2042.7+1519 CõYAuDg               
+       4FGL J2043.3-1520 CõkQ¡ujË                       4FGL J2043.9+2051 Cõ}dA¶“Ú                     4FGL J2045.0+4202 Cõ°B(#T                       4FGL J2045.6+2455 Cõ¥√A«bÇ                      4FGL J2046.1-1626 Cõ∆F¡Éãx                     
+4FGL J2047.5+4356 CõÒB/≈       #              4FGL J2048.4-2517 Cúm¡ V°                       4FGL J2050.0+4114cCú@_B$ˆ                     )4FGL J2050.4-3015 CúMØ¡Ú	l                      4FGL J2052.2+1635 Cúà>AÑ±˘                       4FGL J2052.3+4437 CúäB2àÄ                     4FGL J2052.8+5739 Cúú"Bf°H              8       N4FGL J2054.2+6904 Cú»óBä'_                      	4FGL J2058.0+3338 CùB-BçP                     4FGL J2058.5-1833 CùS¡îÑ∂                       4FGL J2100.0+1445 CùÅËAl;d              
+       
+4FGL J2101.8+5044cCùªíBJ¯8                       4FGL J2104.0+4623 Cû æB9àŒ                       4FGL J2105.9+7508 Cû=òBñIÔ                     
+4FGL J2107.7+3529 CûxÆBÙ9       @                4FGL J2108.0+5155 CûÇ#BOµ›                       4FGL J2109.6+3954 Cû¥˛B§&                       4FGL J2110.7+5129 Cû◊‹BM˘ß                       4FGL J2114.3+5023 CüKxBIò‚                     4FGL J2114.9-3326 Cü]z¬Ωø                       4FGL J2116.2+3701 CüáöBQ                      4FGL J2117.0+1344 Cü†ˆA[Î                      4FGL J2117.9+3729 Cüø BÔ“              	       4FGL J2118.3+4055 CüÀ^B#±™                       4FGL J2120.0+5257 C†'BSÃÕ                       4FGL J2120.5-0138 C†}ø—&È                       4FGL J2122.3+7653 C†KkBô«                       4FGL J2124.9-2433 C†ù¡ƒm˙                       4FGL J2125.6+0458 C†¥@üN<                       4FGL J2129.1-0240 C°%¿+¥¢                       4FGL J2130.8+2649 C°[A÷™e                       4FGL J2138.9-0408 C¢_.¿Ñµ                       4FGL J2141.4+0733 C¢ØÛ@Ú7       	                4FGL J2142.5-2029 C¢“=¡£¯’                       4FGL J2144.2+7709cC£	lBöOO                     4FGL J2144.8-1600 C£ú¡Äﬁ                       4FGL J2147.4-3713 C£n(¬‡ﬂ                       4FGL J2147.4-3854 C£l–¬™                       4FGL J2152.0+4718cC§[B=:                      4FGL J2152.5-0607 C§$¿√‘ï                       4FGL J2157.8+7142cC§º"BèmP                       4FGL J2205.0+0943 C•†yAã¨                       4FGL J2207.1+2222 C•ÂFA≤˛]                     4FGL J2209.2+3710 C¶'B∑f                       4FGL J2210.2+1624 C¶I|AÉ9ı                     4FGL J2210.2+5919 C¶GBmL~                      4FGL J2211.9-2924 C¶}d¡ÎIÔ                       4FGL J2212.4+0708 C¶ç›@‰ë—                      4FGL J2218.5+6822 CßPÔBàøV                     4FGL J2218.8+4736 Cß\©B>g8                      4FGL J2220.8+6319 Cßú©B}F%                     4FGL J2222.1-3907 Cß≈¬Ü‹                       4FGL J2222.9+1507 Cß›ÅArG                     4FGL J2223.0+2704 Cß·Aÿñº                       4FGL J2225.8-0804 C®<@¡C˛              
+       	4FGL J2227.1+6455 C®dTBÅŸ>                       4FGL J2229.2+6421cC®ß2BÄª=                       4FGL J2233.3+6530cC©,ºBÉ3                       4FGL J2234.8-2610 C©[¡—fœ                       4FGL J2236.9+1839 C©üÃAïTï                     4FGL J2241.2+4303 C™&wB,;≥                       4FGL J2249.4+6222 C´,ÒByÜ                       4FGL J2250.5+3305 C´Q˘BeF                     4FGL J2250.6+5809 C´SaBhö∫                       4FGL J2255.4-3252 C´Ô˘¬Ñg                       4FGL J2256.5+6212cC¨bBx◊
+                       4FGL J2303.9+5554 C¨ˇäB_ß’                     4FGL J2306.6+0940 C≠SDA≈m                       4FGL J2312.4+8253 CÆ◊B•»È                       4FGL J2313.4+5947 CÆ/EBo*                       4FGL J2316.7-3144 CÆòÚ¡˝˝Ù                       4FGL J2316.8-2518 CÆú0¡ Ä4                      4FGL J2317.7+2839 CÆ∏AÂEm                     4FGL J2317.8+6140cCÆ∫ÎBv∫ì              	       4FGL J2318.9+4151 CÆ›…B'u?                       4FGL J2320.1-2440 CØé¡≈`B                       4FGL J2323.9+2519 CØ}2A ®X                      4FGL J2324.6+3115 CØï√A˙Û                       4FGL J2326.5+8555cCØ—ßB´ÿª       +                4FGL J2328.0-2557 C∞_¡œ≥h                       4FGL J2330.5-2445 C∞Rˇ¡∆Œ                       4FGL J2331.6+4430 C∞s^B2"                     4FGL J2336.2-0715 C±ù¿Ëxl                       4FGL J2337.7-2903 C±7$¡ËÇ                       4FGL J2338.1+0411 C±DÖ@Ö˝ã                       4FGL J2350.5-3930 C≤—ˇ¬
+X                       4FGL J2351.4-2818 C≤Ô.¡‚~(                     4FGL J2353.2+3135 C≥)'A¸ΩŸ                     4FGL J2357.8+6839 C≥ººBâR                      4FGL J2359.3+1444 C≥ÎdAkˇ.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
